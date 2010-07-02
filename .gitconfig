@@ -1,0 +1,13 @@
+[user]
+	name = Soe Moe
+	email = soemoetunlwin@gmail.com
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
