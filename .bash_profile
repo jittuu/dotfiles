@@ -9,5 +9,5 @@ function parse_git_branch {
 }
 
 
-export PS1="\W$(parse_git_branch)$ "
+export PS1="\w$(parse_git_branch)$ "
 
