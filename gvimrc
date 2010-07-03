@@ -1,1 +1,1 @@
-:colorscheme vividchalk 
+:colorscheme railscasts 
