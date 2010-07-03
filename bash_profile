@@ -11,3 +11,7 @@ function parse_git_branch {
 
 export PS1="\w$(parse_git_branch)$ "
 
+if [ -f /opt/local/etc/bash_completion ]; then
+    . /opt/local/etc/bash_completion
+fi
+
