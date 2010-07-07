@@ -14,3 +14,6 @@ set expandtab
 
 "line numbering
 set number
+
+"key mapping
+map <C-f> :FuzzyFinderTextMate <CR>
