@@ -1,2 +1,2 @@
 :colorscheme railscasts 
-hi LineNr guibg=grey
+hi LineNr guibg=black guifg=grey
