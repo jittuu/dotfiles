@@ -1,34 +1,8 @@
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+source ~/.bash/aliases
+source ~/.bash/completions
+source ~/.bash/paths
+source ~/.bash/config
 
-# Set git autocompletion and PS1 integration
-if [ -f /usr/local/git/contrib/completion/git-completion.bash ]; then
-  . /usr/local/git/contrib/completion/git-completion.bash
+if [ -f ~/.bashrc ]; then
+  . ~/.bashrc
 fi
-
-if [ -f /opt/local/etc/bash_completion ]; then
-    . /opt/local/etc/bash_completion
-fi
-
-# git-enable prompt with branch name and coloring for dirty-state
-
-# COLORS
-LIGHT_GRAY="\[\033[0;37m\]"; BLUE="\[\033[1;36m\]"; RED="\[\033[0;31m\]"; LIGHT_RED="\[\033[1;31m\]"; 
-GREEN="\[\033[0;32m\]"; WHITE="\[\033[1;37m\]"; LIGHT_GRAY="\[\033[0;37m\]"; YELLOW="\[\033[1;33m\]";
-# GIT PROMPT (http://gist.github.com/120804)
-
-function parse_git_branch { 
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \(\1\)/'; 
-}
-
-function parse_git_status { 
-  git status 2> /dev/null | sed -e '/(working directory clean)$/!d' | wc -l; 
-}
-
-function check_git_changes { 
-  # tput setaf 1 = RED, tput setaf 2 = GREEN
-  [ `parse_git_status` -ne 1 ] && tput setaf 1 || tput setaf 2
-} 
-
-export PS1="$YELLOW\w\[\$(check_git_changes)\]\$(parse_git_branch)$LIGHT_GRAY $ "
-
-export AUTOFEATURE=true
