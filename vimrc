@@ -12,6 +12,12 @@ set shiftwidth=2
 set autoindent
 set expandtab
 
+"Invisible characters and colors setting
+set listchars=tab:▸\ ,eol:¬
+
+"set hidden for buffer
+set hidden
+
 "line numbering
 set number
 
