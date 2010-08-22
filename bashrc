@@ -43,4 +43,9 @@ if [[ -n "$PS1" ]] ; then
 
 	# This loads RVM into a shell session.
 	[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  
+
+  source ~/.bash/aliases
+  source ~/.bash/completions
+  source ~/.bash/paths
+  source ~/.bash/config
 fi
