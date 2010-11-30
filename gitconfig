@@ -11,3 +11,6 @@
 	diff = auto
 	interactive = auto
 	status = auto
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
