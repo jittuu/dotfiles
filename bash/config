@@ -21,3 +21,4 @@ function check_git_changes {
 export PS1="$YELLOW\w\[\$(check_git_changes)\]\$(parse_git_branch)$LIGHT_GRAY $ "
 
 export AUTOFEATURE=true
+export CLICOLOR=1
