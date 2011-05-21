@@ -13,6 +13,7 @@ alias gca='git commit -a'
 alias gco='git checkout'
 alias gb='git branch'
 alias gs='git status'
+alias gph='git push heroku master'
 
 # rails
 alias sc='script/console'
