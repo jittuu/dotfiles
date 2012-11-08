@@ -41,8 +41,8 @@ if [[ -n "$PS1" ]] ; then
 	    . /etc/bash_completion
 	fi
 
-	# This loads RVM into a shell session.
-	[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  
+  # to enable rbenv
+  if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
   source ~/.bash/aliases
   source ~/.bash/completions
