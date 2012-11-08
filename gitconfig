@@ -16,3 +16,5 @@
 	merge = refs/heads/master
 [core]
 	editor = mvim
+[push]
+	default = simple
