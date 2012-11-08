@@ -12,7 +12,7 @@ function parse_git_branch {
 }
 
 function parse_git_status { 
-  git status 2> /dev/null | sed -e '/(working directory clean)$/!d' | wc -l; 
+  git status 2> /dev/null | sed -e '/working directory clean$/!d' | wc -l; 
 }
 
 function check_git_changes { 
