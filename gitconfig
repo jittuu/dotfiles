@@ -18,3 +18,5 @@
 	editor = mvim
 [push]
 	default = simple
+[remote "origin"]
+	push = HEAD
