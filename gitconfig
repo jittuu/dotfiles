@@ -20,3 +20,5 @@
 	default = simple
 [remote "origin"]
 	push = HEAD
+[branch]
+	autosetuprebase = always
