@@ -48,4 +48,6 @@ if [[ -n "$PS1" ]] ; then
   source ~/.bash/completions
   source ~/.bash/paths
   source ~/.bash/config
+
+  [ -f ~/.bundler-exec.sh ] && source ~/.bundler-exec.sh
 fi
