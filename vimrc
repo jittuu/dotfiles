@@ -45,3 +45,17 @@ map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 map <Leader>d :NERDTreeToggle<CR>
 
 :command C let @/=""
+
+" Default color scheme
+set background=dark
+colorscheme solarized
+
+if has("gui_running")
+  if has("gui_gtk2")
+    set guifont=Inconsolata\ 12
+  elseif has("gui_macvim")
+    set guifont=Menlo:h14
+  elseif has("gui_win32")
+    set guifont=Consolas:h11:cANSI
+  endif
+endif
