@@ -10,3 +10,6 @@
 [submodule "vim/bundle/vim-tomorrow-theme"]
 	path = vim/bundle/vim-tomorrow-theme
 	url = git://github.com/chriskempson/vim-tomorrow-theme.git
+[submodule "vim/bundle/vim-color-solarized"]
+	path = vim/bundle/vim-color-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
