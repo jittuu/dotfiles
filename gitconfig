@@ -16,6 +16,7 @@
 	merge = refs/heads/master
 [core]
 	editor = mvim
+	excludesfile = ~/.cvsignore
 [push]
 	default = simple
 [remote "origin"]
