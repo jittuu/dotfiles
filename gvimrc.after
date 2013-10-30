@@ -1,7 +1,0 @@
-" customize guioptions
-set guioptions-=T " remove toolbar
-
-" customize color
-color railscasts
-highlight LineNr guifg=#404040 guibg=NONE
-set guifont=Monaco:h12
