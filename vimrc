@@ -38,6 +38,9 @@ set directory=~/vimtmp/backup
 set completeopt-=preview
 set completeopt+=longest
 
+" supertab
+let g:SuperTabDefaultCompletionType = "context"
+
 " map Leader key to ,
 let mapleader = ","
 
