@@ -34,6 +34,10 @@ set smartcase
 set backupdir=~/vimtmp/backup
 set directory=~/vimtmp/backup
 
+" omnicomplete
+set completeopt-=preview
+set completeopt+=longest
+
 " map Leader key to ,
 let mapleader = ","
 
