@@ -16,3 +16,6 @@
 [submodule "vim/bundle/vim-godef"]
 	path = vim/bundle/vim-godef
 	url = git@github.com:dgryski/vim-godef.git
+[submodule "vim/bundle/vim-gocode"]
+	path = vim/bundle/vim-gocode
+	url = git@github.com:Blackrush/vim-gocode.git
