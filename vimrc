@@ -30,6 +30,12 @@ set incsearch
 set ignorecase
 set smartcase
 
+" folding settings
+set foldmethod=syntax
+set foldnestmax=10
+set nofoldenable
+set foldlevel=0
+
 " Directories for swp files
 set backupdir=~/vimtmp/backup
 set directory=~/vimtmp/backup
