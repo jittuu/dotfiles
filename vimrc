@@ -58,6 +58,7 @@ map <Leader>d :NERDTreeToggle<CR>
 
 " Default color scheme
 set background=dark
+let g:solarized_termcolors=256
 colorscheme solarized
 
 if has("gui_running")
