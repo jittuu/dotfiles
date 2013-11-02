@@ -34,6 +34,9 @@ set smartcase
 set backupdir=~/vimtmp/backup
 set directory=~/vimtmp/backup
 
+" go Fmt on save
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
+
 " omnicomplete
 set completeopt-=preview
 set completeopt+=longest
