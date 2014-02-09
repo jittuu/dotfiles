@@ -1,6 +1,9 @@
 " load pathogen
 call pathogen#infect()
 
+" load the plugin and indent settings for the detected filetype
+filetype plugin indent on
+
 " base customization
 set number
 set ruler
@@ -8,9 +11,6 @@ syntax on
 
 " Set encoding
 set encoding=utf-8
-
-" load the plugin and indent settings for the detected filetype
-filetype plugin indent on
 
 " indent
 set smartindent
