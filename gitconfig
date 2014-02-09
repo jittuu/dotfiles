@@ -15,7 +15,7 @@
 	remote = origin
 	merge = refs/heads/master
 [core]
-	editor = mvim
+	editor = vim
 	excludesfile = ~/.cvsignore
 [push]
 	default = simple
@@ -23,3 +23,6 @@
 	push = HEAD
 [branch]
 	autosetuprebase = always
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
