@@ -47,18 +47,12 @@ autocmd FileType go autocmd BufWritePre <buffer> Fmt
 set completeopt-=preview
 set completeopt+=longest
 
-" supertab
-let g:SuperTabDefaultCompletionType = "context"
-
 " map Leader key to ,
 let mapleader = ","
 
 " Opens an edit command with the path of the currently edited file filled in
 " Normal mode: <Leader>e
 map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
-
-" NERDTree toggle
-map <Leader>d :NERDTreeToggle<CR>
 
 :command C let @/=""
 
