@@ -9,7 +9,7 @@ set directory=~/vimtmp/backup
 " Set font
 if has("gui_running")
   if has("gui_win32")
-    set guifont=consolas:h11:cANSI
+    set guifont=Meslo_LG_M_for_Powerline:h10:cANSI
     set guioptions-=T
     set guioptions-=m
   endif
@@ -18,6 +18,23 @@ endif
 " Default color scheme
 set background=dark
 colorscheme solarized
+
+" vim-airline
+let g:airline_powerline_fonts = 1
+let g:airline_theme='murmur'
+let g:airline_mode_map = {
+      \ '__' : '-',
+      \ 'n'  : 'N',
+      \ 'i'  : 'I',
+      \ 'R'  : 'R',
+      \ 'c'  : 'C',
+      \ 'v'  : 'V',
+      \ 'V'  : 'V',
+      \ '' : 'V',
+      \ 's'  : 'S',
+      \ 'S'  : 'S',
+      \ '' : 'S',
+      \ }
 
 " ruler
 set number
