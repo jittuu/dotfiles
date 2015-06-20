@@ -6,6 +6,9 @@ call pathogen#helptags()
 set backupdir=~/vimtmp/backup
 set directory=~/vimtmp/backup
 
+" copy & paste
+set clipboard=unnamed
+
 " Set font
 if has("gui_running")
   if has("gui_win32")
