@@ -101,6 +101,10 @@ set backspace=indent,eol,start
 " Windowing
 set splitright
 
+" vim-go
+let g:go_fmt_command = "goimports"
+let g:go_auto_type_info = 1
+
 " map Leader key to ,
 let mapleader = ","
 
