@@ -15,6 +15,8 @@ if has("gui_running")
     set guifont=Meslo_LG_M_for_Powerline:h10:cANSI
     set guioptions-=T
     set guioptions-=m
+  else
+    set guifont=Meslo\ LG\ M\ for\ Powerline:h12
   endif
 endif
 
