@@ -68,4 +68,4 @@ function Delete-MergedBranches ($Commit = 'HEAD', [switch]$Force) {
 . (Resolve-Path ~/Documents/WindowsPowershell/alias.ps1)
 
 # VsCmd
-VsCmd
+# VsCmd
