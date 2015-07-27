@@ -36,5 +36,8 @@ Set-Alias gogae GoApp-Gae
 # which
 function which($name) { Get-Command $name | Select-Object -ExpandProperty Definition }
 
+# gosrc
+function gosrc($name) { $env:GOPATH + "/src/" + $name }
+
 # hub
 Set-Alias git hub
