@@ -1,32 +1,37 @@
 function prompt() {
     $loc = (Get-Location).Path
-    $host.ui.RawUI.WindowTitle = $loc
-    $dir = [System.IO.Path]::GetFileName($loc)
-    Write-Host "PS /" -nonewline
-    Write-Host "$($dir)" -nonewline -Foreground Yellow
+        
+    if((Get-Host).Name -eq "ConsoleHost") {
+        $host.ui.RawUI.WindowTitle = $loc
+        $dir = [System.IO.Path]::GetFileName($loc)
+        Write-Host "PS /" -nonewline
+        Write-Host "$($dir)" -nonewline -Foreground Yellow
 
-    # writing git status
-    $status = Get-GitStatus
+        # writing git status
+        $status = Get-GitStatus
 
-    if($status) {
-        $currentBranch = $status.Branch
-        $branchColor = [ConsoleColor]::Green
-        if($status.HasIndex -or $status.HasWorking) {
-            $branchColor = [ConsoleColor]::Red
-        }
+        if($status) {
+            $currentBranch = $status.Branch
+            $branchColor = [ConsoleColor]::Green
+            if($status.HasIndex -or $status.HasWorking) {
+                $branchColor = [ConsoleColor]::Red
+            }
 
-        Write-Host -NoNewline " ["
-        Write-Host -NoNewline $currentBranch -ForegroundColor $branchColor
+            Write-Host -NoNewline "["
+            Write-Host -NoNewline $currentBranch -ForegroundColor $branchColor
 
-        if($status.BehindBy -gt 0) {
-            Write-Host -NoNewline "-$($status.BehindBy)" -ForegroundColor $branchColor
-        } elseif($status.AheadBy -gt 0) {
-            Write-Host -NoNewline "+$($status.AheadBy)" -ForegroundColor $branchColor
-        }
-        Write-Host -NoNewline "]"
+            if($status.BehindBy -gt 0) {
+                Write-Host -NoNewline "-$($status.BehindBy)" -ForegroundColor $branchColor
+            } elseif($status.AheadBy -gt 0) {
+                Write-Host -NoNewline "+$($status.AheadBy)" -ForegroundColor $branchColor
+            }
+            Write-Host -NoNewline "]"
+        }        
+
+        return "> "
     }
 
-    return " > "
+    return "$($loc)> "
 }
 
 function VsCmd() {
