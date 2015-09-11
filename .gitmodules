@@ -30,3 +30,6 @@
 [submodule "vim/bundle/typescript-tools"]
 	path = vim/bundle/typescript-tools
 	url = https://github.com/clausreinke/typescript-tools.vim.git
+[submodule "vim/bundle/vim-javascript"]
+	path = vim/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
