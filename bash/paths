@@ -1,3 +1,5 @@
 export GOPATH=$HOME/code/go
+export ANDROID_HOME=$HOME/Library/Android/sdk
 # Put /usr/local/{sbin,bin} first
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/bin:$GOPATH/bin:/usr/local/share/npm/bin
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/bin:$GOPATH/bin:/usr/local/share/npm/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
