@@ -60,7 +60,4 @@ if [[ -n "$PS1" ]] ; then
 
   # The next line enables bash completion for gcloud.
   source ~/google-cloud-sdk/completion.bash.inc
-
-  # vscode
-  function code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $*; }
 fi
