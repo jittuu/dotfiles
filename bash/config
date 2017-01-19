@@ -20,7 +20,7 @@ function check_git_changes {
   [ `parse_git_status` -ne 1 ] && tput setaf 1 || tput setaf 2
 } 
 
-export PS1="$YELLOW\w\[\$(check_git_changes)\]\$(parse_git_branch)$END_COLORING $ "
+export PS1="$YELLOW\w$END_COLORING $ "
 
 export AUTOFEATURE=true
 export CLICOLOR=1
