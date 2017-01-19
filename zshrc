@@ -84,3 +84,15 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# paths
+export GOPATH=$HOME/go
+export ANDROID_HOME=$HOME/Library/Android/sdk
+# Put /usr/local/{sbin,bin} first
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/bin:$GOPATH/bin:/usr/local/share/npm/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+# The next line updates PATH for the Google Cloud SDK.
+source ~/google-cloud-sdk/path.zsh.inc
+
+# The next line enables bash completion for gcloud.
+source ~/google-cloud-sdk/completion.zsh.inc
