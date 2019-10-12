@@ -90,6 +90,7 @@ export GOPATH=$HOME/go
 export ANDROID_HOME=$HOME/Library/Android/sdk
 # Put /usr/local/{sbin,bin} first
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/bin:$GOPATH/bin:/usr/local/share/npm/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export PATH="$(yarn global bin):$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
 source ~/google-cloud-sdk/path.zsh.inc
